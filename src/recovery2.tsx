@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Button } from "react-native";
 
-const recovery2 = () => {
+const Recovery2 = () => {
   return (
     <View>
       <Text>Recovery2</Text>
@@ -9,4 +9,4 @@ const recovery2 = () => {
     </View>
   );
 }
-export default recovery2;
+export default Recovery2;
