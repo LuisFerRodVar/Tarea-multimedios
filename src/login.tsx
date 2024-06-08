@@ -1,16 +1,16 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
-
-const helloWorld = () => {
-  console.log("Hello World")
-  return <Text>Hello World</Text>;
-}
+import { View, Text, Button, Image, TextInput } from "react-native";
+import Styles from "../assets/css/styles";
 
 function Login() {
   return (
     <View>
-      <Text>Login</Text>
-      <Button title="Login" onPress={() => {helloWorld}} />
+      <Image source={require('../assets/background.png')} style={Styles.background} />
+      <Text style={Styles.title}>Bienvenido!</Text>
+      <Text style={Styles.subtitle}>Ingresa con tu cuenta</Text>
+      <TextInput style={Styles.input} placeholder="Correo" />
+      <TextInput style={Styles.input} placeholder="contraseña" />
+      <Button title="Login" onPress={() => {}} />
     </View>
   );
 }
