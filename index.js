@@ -1,7 +1,7 @@
 /**
  * @format
  */
-import App from './src/login';
 import {AppRegistry} from 'react-native';
+import App from './app';
 
 AppRegistry.registerComponent('main', () => App);

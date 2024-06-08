@@ -27,6 +27,13 @@ const Styles = StyleSheet.create({
     margin: 10,
     paddingLeft: 10,
   },
+  link: {
+    color: "#000",
+    fontSize: 15,
+    fontWeight: "500",
+    textAlign: "right",
+    margin: 10,
+  },
  
 });
 export default Styles;

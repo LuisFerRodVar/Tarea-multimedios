@@ -12,12 +12,13 @@ const stack = createStackNavigator();
 const Navigation = () => {
   return (
     <NavigationContainer>
-      <stack.Navigator>
-        <stack.Screen name="login" component={Login} />
-        <stack.Screen name="recovery1" component={Recovery1} />
-        <stack.Screen name="recovery2" component={Recovery2} />
-        <stack.Screen name="signup" component={Signup} />
+      <stack.Navigator initialRouteName='Login'>
+        <stack.Screen name="Login" component={Login} />
+        <stack.Screen name="Recovery1" component={Recovery1} />
+        <stack.Screen name="Recovery2" component={Recovery2} />
+        <stack.Screen name="Signup" component={Signup} />
       </stack.Navigator>
     </NavigationContainer>
   );
 }
+export default Navigation;
