@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text , TextInput , TouchableOpacity} from "react-native";
+import {Image, View, Text , TextInput , TouchableOpacity} from "react-native";
 import Styles from "../assets/css/styles"
 import { useNavigation } from "@react-navigation/native";
 
@@ -14,6 +14,7 @@ const Recovery1 = () => {
 
   return (
     <View>
+      <Image source={require('../assets/background.png')} style={Styles.background} />
       <Text style={Styles.title}>Recuperar cuenta</Text>
       <Text style={Styles.subtitle}>Ingrese su correo electrónico para recuperar cuenta</Text>
       <TextInput style={Styles.input} placeholder="multimedios@gmail.com" />
