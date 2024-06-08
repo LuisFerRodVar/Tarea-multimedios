@@ -9,6 +9,9 @@ const Login = () => {
   const forgotPassword = () => {
     navigation.navigate('Recovery1');
   };
+  const signup = () => {
+   navigation.navigate('Signup');
+  }
 
   return (
     <View>
@@ -18,9 +21,15 @@ const Login = () => {
       <TextInput style={Styles.input} placeholder="multimedios@gmail.com" />
       <TextInput style={Styles.input} placeholder="contraseña" secureTextEntry />
       <TouchableOpacity onPress={forgotPassword}>
-        <Text style={Styles.link}>Olvidé mi contraseña</Text>
+        <Text style={Styles.link}>¿Has olvidado su contraseña?</Text>
       </TouchableOpacity>
-      <Button title="Login" onPress={() => {}} />
+      <TouchableOpacity  onPress={() => {}} style={Styles.buttonContainer}>
+        <Text style={Styles.button}>Iniciar Sesión</Text>
+      </TouchableOpacity>      
+      <TouchableOpacity onPress={signup}>
+        <Text style={Styles.linkAux}>¿No tienes una cuenta?</Text>
+        <Text style={Styles.linkAux1}>Regístrate</Text>
+      </TouchableOpacity>
     </View>
   );
 }
